@@ -9,7 +9,7 @@ export default function CTA() {
           href="#"
           className="bg-white border-2 border-white text-xl py-2 px-8 rounded-full opacity-90 hover:opacity-100"
         >
-          Work With Us
+          Send Us a Message
         </a>
       </div>
     </div>

@@ -4,7 +4,7 @@ export default function Showcase() {
   return (
     <div className="h-screen w-full flex items-center justify-center relative overflow-hidden">
       <div className="w-5/6 mx-auto flex items-center justify-between">
-        <div className="z-40">
+        <div className="z-30">
           <h1 className="text-8xl font-bold">
             Addie <br /> Productions
           </h1>

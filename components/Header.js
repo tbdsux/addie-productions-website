@@ -5,7 +5,7 @@ import Showcase from './Showcase'
 export default function Header() {
   return (
     <header>
-      <nav className="fixed w-full z-50 bg-white">
+      <nav className="fixed w-full z-40 bg-white">
         <div className="w-5/6 mx-auto py-4 flex items-center justify-between">
           {/* header > logo */}
           <Link href="/">
@@ -27,7 +27,7 @@ export default function Header() {
                 <a href="#">Services</a>
               </li>
               <li className="px-4 tracking-wider hover:text-main">
-                <a href="#">Pricing</a>
+                <a href="#">Portfolio</a>
               </li>
               <li className="px-4 tracking-wider hover:text-main">
                 <a href="#">About Us</a>
