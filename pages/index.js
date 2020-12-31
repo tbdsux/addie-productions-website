@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Addie Productions</title>
+        <title>Addie Productions | Official Website</title>
       </Head>
 
       {/* modal -> to be used by portfolio */}

@@ -44,7 +44,7 @@ export default function Showcase() {
             your perfect business needs.
           </p>
         </div>
-        <div className="w-full sm:w-1/2 h-64 sm:h-3/4 mx-auto relative sm:absolute z-30 md:z-10 sm:bottom-12 sm:right-0">
+        <div className="w-full sm:w-1/2 h-64 sm:h-3/4 mx-auto relative sm:absolute z-30 md:z-10 sm:bottom-12 right-12">
           <Image
             src="/images/showcase.svg"
             alt="Logo Design - Addie Productions"
