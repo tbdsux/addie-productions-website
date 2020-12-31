@@ -59,8 +59,9 @@ export default function Home() {
               Let's fit together what's best for your business
             </h3>
             <p className="text-lg sm:text-xl xl:text-2xl font-light tracking-wide mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-              magni vitae unde reprehenderit temporibus! Repudiandae.
+              We specialize in graphics design and we can help in improving the
+              layouts, resources and designs and styles for you or your
+              business.
             </p>
           </div>
         </div>
@@ -85,9 +86,8 @@ export default function Home() {
                     Business Logo
                   </h3>
                   <p className="mt-2 text-base md:text-lg font-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae accusamus nostrum excepturi consectetur possimus
-                    cum.
+                    Logos are the most important in a business as it symbolizes,
+                    promotes and creates a name for itself within the industry.
                   </p>
                   <a
                     href="https://web.facebook.com/addieprod/"
@@ -107,9 +107,8 @@ export default function Home() {
                     Product Package
                   </h3>
                   <p className="mt-2 text-base md:text-lg font-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae accusamus nostrum excepturi consectetur possimus
-                    cum.
+                    A clean, stylish and unique packaging can attract the eyes
+                    of customers and would make them love the product more.
                   </p>
                   <a
                     href="https://web.facebook.com/addieprod/"
@@ -129,9 +128,9 @@ export default function Home() {
                     Advertisements & Banner
                   </h3>
                   <p className="mt-2 text-base md:text-lg font-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae accusamus nostrum excepturi consectetur possimus
-                    cum.
+                    We can design an advertisement banner for you, for social
+                    media or print poster which can attract customers on the
+                    way.
                   </p>
                   <a
                     href="https://web.facebook.com/addieprod/"
@@ -151,9 +150,8 @@ export default function Home() {
                     Website UI
                   </h3>
                   <p className="mt-2 text-base md:text-lg font-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae accusamus nostrum excepturi consectetur possimus
-                    cum.
+                    Do you have a dream website? We can make a prototype design
+                    out of it, then we can build it for production.
                   </p>
                   <a
                     href="https://web.facebook.com/addieprod/"
@@ -216,8 +214,9 @@ export default function Home() {
               We will do the work while you wait
             </h3>
             <p className="text-lg sm:text-xl xl:text-2xl font-light tracking-wide mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-              magni vitae unde reprehenderit temporibus! Repudiandae.
+              We start working as soon as we finish setting up the preparations
+              to be needed and you can just wait while we build the design for
+              you.
             </p>
           </div>
           <div className="relative w-full sm:w-4/5 md:w-2/5 h-96">
@@ -238,8 +237,8 @@ export default function Home() {
               Expect the best output from us
             </h3>
             <p className="text-lg sm:text-xl xl:text-2xl font-light tracking-wide mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-              magni vitae unde reprehenderit temporibus! Repudiandae.
+              We provide and produce the best output possible in any means
+              possible befitting for your perfect business.
             </p>
           </div>
         </div>
