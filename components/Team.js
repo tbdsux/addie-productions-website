@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { team } from '../components/team/data'
+import { team } from '../data/members'
 
 export default function Team() {
   const [height, setHeight] = useState('screen')
@@ -37,10 +37,10 @@ export default function Team() {
             Our team consists of the following amazing people...
           </p>
         </div>
-        <div className="w-5/6 md:w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="w-5/6 md:w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {team.map((member) => (
             <div
-              className="w-full text-center shadow-xl mx-auto p-8"
+              className="w-full text-center shadow-2xl mx-auto p-8 rounded-lg"
               key={member.name}
             >
               <div className="relative mx-auto h-32 md:h-40 lg:h-48 w-32 md:w-40 lg:w-48">
@@ -59,9 +59,9 @@ export default function Team() {
                 href={`https://www.facebook.com/${member.facebook}`}
                 type="button"
                 target="_blank"
-                className="py-1 px-3 bg-blue-500 hover:bg-blue-600 text-white tracking-wider mt-3"
+                className="py-1 px-3 bg-blue-500 hover:bg-blue-600 text-white tracking-wider mt-3 rounded-full"
               >
-                @{member.facebook}
+                fb@{member.facebook}
               </a>
             </div>
           ))}
