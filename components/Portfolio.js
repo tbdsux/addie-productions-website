@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { images } from './portfolio/data'
+import { images } from '../data/portfolio'
 
 export default function Portfolio(props) {
   return (
