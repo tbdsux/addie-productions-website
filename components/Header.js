@@ -5,7 +5,9 @@ import Showcase from './Showcase'
 
 export default function Header() {
   const [menu, showMenu] = useState(true)
+  const [scroll, setScroll] = useState(false)
 
+  // menu resizing
   useEffect(() => {
     const handleResizeMenu = () => {
       if (window.outerWidth < 1024) {
@@ -24,9 +26,26 @@ export default function Header() {
     }
   })
 
+  // scroll navigation border-bottom
+  useEffect(() => {
+    const navMenu = () => {
+      if (window.scrollY > 0) {
+        setScroll(true)
+      } else {
+        setScroll(false)
+      }
+    }
+
+    window.addEventListener('scroll', navMenu)
+  })
+
   return (
     <header>
-      <nav className="fixed w-full z-40 bg-white">
+      <nav
+        className={`fixed w-full z-40 bg-white ${
+          scroll ? 'border-b-2 border-main' : null
+        }`}
+      >
         <div className="w-11/12 sm:w-5/6 mx-auto py-4 flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-auto flex items-center justify-between">
             {/* header > logo */}
