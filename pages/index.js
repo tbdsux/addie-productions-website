@@ -9,6 +9,8 @@ import Portfolio from '../components/Portfolio'
 import Modal from '../components/portfolio/Modal'
 import Team from '../components/Team'
 
+import { mainServices } from '../data/services'
+
 export default function Home() {
   const [modal, setModal] = useState(false)
   const [image, setImage] = useState({})
@@ -109,95 +111,35 @@ export default function Home() {
               We design...
             </h3>
           </div>
-          <div className="lg:w-5/6 mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-              <div className="text-center shadow-lg">
-                <div className="h-64 w-full relative">
-                  <Image src="/services/logo-design.svg" layout="fill" />
+          <div className="xl:w-5/6 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center">
+              {mainServices.map((service) => (
+                <div
+                  key={mainServices.indexOf(service)}
+                  className="text-center shadow-2xl rounded-lg"
+                >
+                  <div className="h-64 w-full relative">
+                    <Image src={`/services/${service.image}`} layout="fill" />
+                  </div>
+                  <div className="p-8">
+                    <h3 className="text-2xl md:text-3xl font-light">
+                      {service.title}
+                    </h3>
+                    <p className="mt-2 text-base md:text-lg font-light">
+                      {service.description}
+                    </p>
+                    <a
+                      href="https://web.facebook.com/addieprod/"
+                      type="button"
+                      className="mt-4 py-2 px-10 bg-main opacity-80 hover:opacity-100 rounded-full text-lg tracking-wide"
+                    >
+                      Contact Us
+                    </a>
+                  </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="text-2xl md:text-3xl font-light">
-                    Business Logo
-                  </h3>
-                  <p className="mt-2 text-base md:text-lg font-light">
-                    Logos are the most important in a business as it symbolizes,
-                    promotes and creates a name for itself within the industry.
-                  </p>
-                  <a
-                    href="https://web.facebook.com/addieprod/"
-                    type="button"
-                    className="mt-4 py-2 px-10 bg-main opacity-80 hover:opacity-100 rounded-full text-lg tracking-wide"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-              <div className="text-center shadow-lg">
-                <div className="h-64 w-full relative">
-                  <Image src="/services/package.svg" layout="fill" />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl md:text-3xl font-light">
-                    Product Package
-                  </h3>
-                  <p className="mt-2 text-base md:text-lg font-light">
-                    A clean, stylish and unique packaging can attract the eyes
-                    of customers and would make them love the product more.
-                  </p>
-                  <a
-                    href="https://web.facebook.com/addieprod/"
-                    type="button"
-                    className="mt-4 py-2 px-10 bg-main opacity-80 hover:opacity-100 rounded-full text-lg tracking-wide"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-              <div className="text-center shadow-lg">
-                <div className="h-64 w-full relative">
-                  <Image src="/services/banner.svg" layout="fill" />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl md:text-3xl font-light">
-                    Advertisements & Banner
-                  </h3>
-                  <p className="mt-2 text-base md:text-lg font-light">
-                    We can design an advertisement banner for you, for social
-                    media or print poster which can attract customers on the
-                    way.
-                  </p>
-                  <a
-                    href="https://web.facebook.com/addieprod/"
-                    type="button"
-                    className="mt-4 py-2 px-10 bg-main opacity-80 hover:opacity-100 rounded-full text-lg tracking-wide"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-              <div className="text-center shadow-lg">
-                <div className="h-64 w-full relative">
-                  <Image src="/services/website.svg" layout="fill" />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl md:text-3xl font-light">
-                    Website UI
-                  </h3>
-                  <p className="mt-2 text-base md:text-lg font-light">
-                    Do you have a dream website? We can make a prototype design
-                    out of it, then we can build it for production.
-                  </p>
-                  <a
-                    href="https://web.facebook.com/addieprod/"
-                    type="button"
-                    className="mt-4 py-2 px-10 bg-main opacity-80 hover:opacity-100 rounded-full text-lg tracking-wide"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
-            <div className="mx-auto w-full md:w-4/5 flex flex-col sm:flex-row items-center justify-between  mt-8 shadow-lg">
+            <div className="mx-auto w-full md:w-4/5 flex flex-col sm:flex-row items-center justify-between mt-8 shadow-2xl p-4 rounded-lg">
               <div className="w-full md:w-1/2 pl-10 mb-3 md:mb-0">
                 <h3 className="text-3xl font-bold">and More...</h3>
                 <ul className="list-disc ml-10 mt-3">
