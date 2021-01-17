@@ -55,23 +55,6 @@ export default function Home() {
         <meta property="og:image" content="/logo.jpg" />
         <meta property="og:url" content="https://addie-productions.ml" />
         <meta property="og:site_name" content="Addie Productions" />
-
-        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-E0TXRB882M"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-E0TXRB882M');
-          `,
-          }}
-        />
       </Head>
 
       {/* modal -> to be used by portfolio */}
